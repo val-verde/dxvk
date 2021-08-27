@@ -20,9 +20,9 @@ compiler_args = [
 ]
 
 link_args = [
-  '-static',
-  '-static-libgcc',
-  '-static-libstdc++',
+  # '-static',
+  # '-static-libgcc',
+  # '-static-libstdc++',
   # We need to set the section alignment for debug symbols to
   # work properly as well as avoiding a memcpy from the Wine loader.
   '-Wl,--file-alignment=4096',
