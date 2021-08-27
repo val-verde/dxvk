@@ -7,6 +7,12 @@
 #include "../util_bit.h"
 #include "../util_likely.h"
 
+#ifdef __aarch64__
+static inline void _mm_pause() {
+__asm__ __volatile__("isb\n");
+}
+#endif
+
 namespace dxvk::sync {
 
   /**
