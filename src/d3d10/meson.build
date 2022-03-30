@@ -24,7 +24,7 @@ d3d10_core_dep = declare_dependency(
   link_with           : [ d3d10_core_dll ],
 )
 
-d3d10_deps = [ lib_d3dcompiler_43, lib_dxgi, dxbc_dep, dxvk_dep, d3d10_core_dep ]
+d3d10_deps = [ lib_d3dcompiler_47, lib_dxgi, dxbc_dep, dxvk_dep, d3d10_core_dep ]
 
 d3d10_dll = shared_library('d3d10'+dll_ext, d3d10_main_src, d3d10_res,
   name_prefix         : '',
